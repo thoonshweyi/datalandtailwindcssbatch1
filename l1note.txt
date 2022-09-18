@@ -1,0 +1,55 @@
+https://tailwindcss.com
+
+Integrate Methods
+1.Using CDN Link (Content Deliver Network)
+2.Using Tailwind CLI
+3.Using PostCSS
+    1 need to load whole tailwind file. 
+    2/3 need nodejs and fast cause the used selector will compile and load.
+    node -v (for node version) at cmd
+
+1.Using CDN Link
+<script src="https://cdn.tailwindcss.com"></script>
+
+3.Using PostCSS
+
+=open folder "usingpostcss"
+=open terminal
+npm install -D tailwindcss postcss autoprefixer
+
+=>Create tailwind.config file
+npx tailwindcss init
+
+=>Add PostCSS file
+=go to tailwind.congig.js
+=and write down in content: ["./public/**/*.html"]
+
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+=>Create Tailwind main file
+=create new folder and naming "tailwind"
+=create new file and maing "main.css" in "tailwind" folder
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=>Build Process
+="npm init -y" in terminal (so it will create package.json)
+=write down in packae.json > "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bulid" : "tailwind -i ./tailwind/main.css -o ./public/tailwind.css"
+  }
+  -i install
+  -o = open
+
+=go to terminal and enter "npm run bulid"
+
+=>Watch 
+go to package.json , write down
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch" : "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css -w"
+  },
