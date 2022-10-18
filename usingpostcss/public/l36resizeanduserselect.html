@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resize & User Select</title>
+        <link href="./tailwind.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        
+
+        <h1>This is Tailwind CSS.</h1>
+
+        <label for="bio1">Bio</label>
+        <textarea name="bio1" id="bio1" class="resize-none" ></textarea>
+        <hr/>
+
+        <label for="bio2">Bio</label>
+        <textarea name="bio2" id="bio2" class="resize-x" ></textarea>
+        <hr/>
+
+        <label for="bio3">Bio</label>
+        <textarea name="bio3" id="bio3" class="resize-y" ></textarea>
+        <hr/>
+
+        <label for="bio4">Bio</label>
+        <textarea name="bio4" id="bio4" class="resize" ></textarea>
+        <hr/>
+
+        <h1>User Select</h1>
+        <p class="select-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p class="select-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p class="select-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p class="select-all">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+
+        <h1>Apperance</h1>
+        <select name="city" id="city" class="">
+            <option value="ygn">Yangon</option>
+            <option value="mdy">Mandalay</option>
+            <option value="bgo">Yangon</option>
+        </select>
+
+        <select name="country" id="country" class="appearance-none">
+            <option value="mm">Myanmar</option>
+            <option value="th">Thailand</option>
+            <option value="slk">Srilanka</option>
+        </select>
+    </body>
+</html>
+
+<!-- 
+    resize-none             =resize : none;
+    resize-x                =resize : horizontal;
+    resize-y                =resize : vertical;
+    resize                  =resize : both;
+
+ -->
+
+ <!-- 
+    select-none             user-select:none;
+    select-auto             user-select:auto; *include before and after
+    select-text             user-select:text;
+    select-all              user-select:all;  *all text will select when single click or double click
+  -->
+
+  <!-- 
+    appearance-none          apperance:none;
+   -->
+
+
+   <!-- 15AP -->
