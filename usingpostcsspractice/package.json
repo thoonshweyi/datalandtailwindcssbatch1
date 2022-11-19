@@ -75,7 +75,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css"
+    "build": "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch" : "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css -w"
   },
   "keywords": [],
   "author": "",
