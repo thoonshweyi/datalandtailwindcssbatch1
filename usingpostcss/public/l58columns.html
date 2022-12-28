@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Columns</title>
+        <link href="./tailwind.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+       
+        </style>
+    </head>
+    <body>
+        <h1>This is Tailwind CSS</h1>
+<!-- 
+        <div class="grid grid-cols-2">
+            <img src="./img/mountain.jpg" class="w-full aspect-square" alt=""/>
+            <img src="./img/cat.jpg" class="w-full aspect-video" alt=""/>
+        </div> -->
+
+        <!-- 'grid-cols' do not contain original gap -->
+        <div class="grid grid-cols-4 gap-2">
+            <img src="./img/weowedone.jpg" class="w-full aspect-square" alt=""/>
+            <img src="./img/weowedtwo.jpeg" class="w-full aspect-video" alt=""/>
+            <img src="./img/weowedthree.jpeg" class="w-full aspect-square" alt=""/>
+            <img src="./img/weowedfour.jpg" class="w-full aspect-video" alt=""/>
+        </div>
+        <hr class="my-5"/>
+
+        <!-- 'columns' contains original margins -->
+        <!-- 'gap' can use with 'columns' -->
+        <div class="columns-4 gap-8">
+            <img src="./img/weowedone.jpg" class="w-full aspect-square" alt=""/>
+            <img src="./img/weowedtwo.jpeg" class="w-full aspect-video" alt=""/>
+            <img src="./img/weowedthree.jpeg" class="w-full aspect-square" alt=""/>
+            <img src="./img/weowedfour.jpg" class="w-full aspect-video" alt=""/>
+        </div>
+        <hr class="my-5"/>
+
+        <div class="columns-md">
+            <img src="./img/weowedone.jpg" class="w-full aspect-square" alt=""/>
+            <img src="./img/weowedtwo.jpeg" class="w-full aspect-video" alt=""/>
+            <img src="./img/weowedthree.jpeg" class="w-full aspect-square" alt=""/>
+            <img src="./img/weowedfour.jpg" class="w-full aspect-video" alt=""/>
+        </div>
+        <hr class="my-5"/>
+
+
+    </body>
+</html>   
+
+<!-- 
+
+    columns-1           columns:1;
+    columns-2           columns:2;
+    columns-3           columns:3;
+    columns-4           columns:4;
+    columns-5           columns:5;
+    columns-6           columns:6;
+    columns-7           columns:7;
+    columns-8           columns:8;
+    columns-9           columns:9;
+    columns-10          columns:10;
+    columns-11          columns:11;
+    columns-12          columns:12;
+
+    columns-auto        columns:auto;
+
+    columns-3xs        
+    columns-2xs   
+    columns-xs      
+    columns-sm      
+    columns-md      
+    columns-lg      
+    columns-xl      
+    columns-2xl      
+    columns-3xl      
+    columns-4xl      
+    columns-5xl      
+    columns-6xl      
+    columns-7xl      
+ -->
+
+ <!-- 22GD -->
