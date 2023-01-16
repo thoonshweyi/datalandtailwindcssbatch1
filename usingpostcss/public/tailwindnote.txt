@@ -20,7 +20,7 @@
         "docoration-8"
     ----
     decoration-style
-        "decoration-solid"  
+        "decoration-solid"          //tailwind default
         "decoration-dashed"  
         "decoration-dotted"  
         "decoration-double"  
@@ -84,7 +84,7 @@
         "border-y-8"
     
     - border-style
-        "border-solid"          //default
+        "border-solid"          //tailwind default
         "border-dashed"
         "border-dotted"
         "border-double"
@@ -183,22 +183,22 @@
     "rounded-r-full"
 
 =>outline
-    -outline-width
-        outline-0       = outline-width:0px;
-        outline-1
-        outline-2
-        outline-4
-        outline-8
-        
-    -outline-style
+    -outline-style (*style go first in outline)
 
         "outline"           = outline-style:solid;
         "outline-dashed"
         "outline-dotted" 
         "outline-double"
         "outline-none"
-        "outline-hidden" 
+        "outline-hidden"
 
+    -outline-width
+        outline-0           = outline-width:0px;
+        outline-1
+        outline-2
+        outline-4
+        outline-8
+        
     -outline-offset
         "outline-offset-0"
         "outline-offset-1"
