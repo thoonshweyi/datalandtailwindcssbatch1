@@ -33,13 +33,24 @@
         
         <h1>This is Tailwind CSS.</h1>
 
-        <h1>Justify content</h1>
+        <h1>flex</h1>
         <div class="box flex">
             <div class="div1">1</div>
             <div class="div2">2</div>
         </div>
         <br/>
+        <br/>
 
+        <h1>grid</h1>
+        <div class="box grid">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+        </div>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h1>justify-content (F)(G) (P)</h1>
         <div class="box flex justify-start">
             <div class="div1">1</div>
         </div>
@@ -60,16 +71,13 @@
             <div class="div2">2</div>
         </div>
         <br/>
+        <hr/>
 
+        <h1>align-items (P)</h1>
         <div class="bigbox flex items-start">
             <div class="div1">1</div>
         </div>
         <br/>
-
-        <br/>
-        <br/>
-        <br/>
-        <h1>align-items</h1>
 
         <div class="bigbox flex items-center">
             <div class="div1">1</div>
@@ -80,11 +88,16 @@
             <div class="div1">1</div>
         </div>
         <br/>
+        <br/>
+        <hr/>
 
+        <h1>justify-content And align-item (P)</h1>
         <div class="bigbox flex justify-center items-center">
             <div class="div1">1</div>
         </div>
         <br/>
+        <br/>
+        <hr/>
 
         <h1 class="bg-green-500 inline">Save Myanmar</h1>
         <h1 class="bg-green-500 inline">Pray Myanmar</h1>
@@ -100,7 +113,159 @@
 
         <span class="bg-sky-300 hidden">Hello Indonesia</span>
         <span class="bg-sky-300 hidden">Bye Indonesia</span>
-        <br>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h1>justify-items (G) - (P)</h1>
+
+        <div class="bigbox grid justify-items-start">
+            <div class="div1"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid justify-items-center">
+            <div class="div1"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid justify-items-end">
+            <div class="div1"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid justify-items-stretch">
+            <div class="div1"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h1>justify-self (G) - (C)</h1>
+        <div class="bigbox grid">
+            <div class="div1 justify-self-start"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-center"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-end"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid">
+            <div class="div1 justify-self-auto"></div>
+            <div class="div1"></div>
+        </div>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h1>align-self - (F) - (C)</h1>
+        <div class="bigbox flex">
+            <div class="div1">01</div>
+            <div class="div1 self-start">02</div>
+            <div class="div1">03</div>
+        </div>
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1">01</div>
+            <div class="div1 self-center">02</div>
+            <div class="div1">03</div>
+        </div>
+        <br/>
+
+        <div class="bigbox flex">
+            <div class="div1">01</div>
+            <div class="div1 self-end">02</div>
+            <div class="div1">03</div>
+        </div>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h1>align-content (G) - (P)</h1>
+        <div class="bigbox grid grid-cols-3 content-start" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-center" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-end" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-between" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-around" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-evenly" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
+
+        <div class="bigbox grid grid-cols-3 content-baseline" style="height: 300px;">
+            <div class="div1">01</div>
+            <div class="div1">02</div>
+            <div class="div1">03</div>
+            <div class="div2">04</div>
+            <div class="div2">05</div>
+            <div class="div2">06</div>
+        </div>
+        <br/>
     </body>
 </html>   
 
@@ -112,43 +277,68 @@ hidden          =display:none;
 grid            =display:grid;
  -->
 
- <!-- 
-justify-start           = justify-content:start;
-justify-center          = justify-content:center;
-justify-end             = justify-content:end;
-justify-between         = justify-content:space-between;
-justify-around          = justify-content:space-around;
-justify-evenly          = justify-content:evenly;
+ 
+<!-- 
+    justify-start               = justify-content:start;
+    justify-center              = justify-content:center;
+    justify-end                 = justify-content:end;
 
+    justify-between             = justify-content:space-between;
+    justify-around              = justify-content:space-around;
+    justify-evenly              = justify-content:space-evenly;
+
+    -------------------------------------------------------
+    justify-items-start         =justify-items:start;
+    justify-items-center        =justify-items:center;
+    justify-items-end           =justify-items:end;
+    
+    justify-items-stretch       =justify-items:stretch; // same as "justify-items-start"
+
+    -------------------------------------------------------
+ 
+    justify-self-auto            = justify-self:auto; // default 
+
+    justify-self-start           = justify-self:start;
+    justify-self-center          = justify-self:center;
+    justify-self-end             = justify-self:end;
+    
+    justify-self-stretch         = justify-self:stretch; // same as "justify-self-start"
   -->
+
+
 
 <!-- 
-    justify-items-start     =justify-items:start;
-    justify-items-center    =justify-items:center;
-    justify-items-end       =justify-items:end;
-    jjustify-items-stretch      =ustify-items:stretch;
- -->
- <!-- 
-    justify-self-auto               = justify-self:auto;
-    justify-self-start              = justify-self:start;
-    justify-self-center             = justify-self:center;
-    justify-self-end                = justify-self:end;
-    justify-self-stretch            = justify-self:stretch;
-  -->
+    items-start                 = align-items:start;
+    items-center                = align-items:center;
+    items-end                   = align-items:end;
+
+    -------------------------------------------------------
+    content-start               =align-content:flex-start;
+    content-center              =align-content:center;
+    content-end                 =align-content:flex-end;
+
+    content-between             =align-content:space-between;
+    content-around              =alogn-content:space-around;
+    content-evenly              =align-content:space-evenly; // same as "content-around"
+    content-baseline            =align-content:baseline; 
+
+    -------------------------------------------------------
+    self-auto                   = align-self:auto;
+
+    self-start                  = align-self:flex-start;
+    self-center                 = align-self:center;
+    self-end                    = align-self:flex-end;
+    
+    self-stretch                = align-self:stretch;
+    self-baseline               = align-self:baseline;
+-->
 
 
-<!-- 
-items-start         = align-items:start;
-items-center        = align-items:center;
-items-end           = align-items:end;
 
- -->
+    
+ 
 
- <!-- 
-    self-auto           = align-self:auto;
-    self-start          = align-self:start;
-    self-center         = align-self:center;
-    self-end            = align-self:end;
-    self-stretch        = align-self:stretch;
-    self-baseline       = align-self:baseline;
-  -->
+
+    
+
+<!-- 21AC -->

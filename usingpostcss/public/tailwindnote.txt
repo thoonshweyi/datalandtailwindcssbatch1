@@ -91,6 +91,9 @@
         "border-none"
         "border-hidden"         //equal to "border-none"
     
+    - border-color 
+        at color chapter 
+
 =>border-radius
     "rounded-none"      = border-radius:0px;
     "rounded-sm"        = border-radius:2px;
@@ -247,62 +250,68 @@
     "drop-shadow-2xl"       
     * filter: drop-shadow(h v b c) drop-shadow(h v b c) ...;
 
-=>blur
-    'blur-none'       = filter:blur(0px);
-    'blur-sm'
-    'blur'
-    'blur-md'
-    'blur-lg'
-    'blur-xl'
-    'blur-2xl'
-    'blur-3xl'
+    - shadow-color
+        at color chapter
 
-=>brightness
-    "brightness-0"      = filter:brightness(0);     //black
-    "brightness-100"    = filter:brightness(1);     //normal
-    "brightness-200"    = filter:brightness(2);     //bright
+=>filterfunction
 
-    "brightness-50"     = filter:brightness(0.5);
-    "brightness-75"     = filter:brightness(0.75);
-    "brightness-125"    = filter:brightness(1.25);
-    "brightness-150"    = filter:brightness(1.5);
+    =>blur
+        'blur-none'       = filter:blur(0px);
+        'blur-sm'
+        'blur'
+        'blur-md'
+        'blur-lg'
+        'blur-xl'
+        'blur-2xl'
+        'blur-3xl'
 
-=>contrast
-    "contrast-0"      = filter:contrast(0);     //gray
-    "contrast-100"    = filter:contrast(1);     //normal
-    "contrast-200"    = filter:contrast(2);     //colorful bright
+    =>brightness
+        "brightness-0"      = filter:brightness(0);     //black
+        "brightness-100"    = filter:brightness(1);     //normal
+        "brightness-200"    = filter:brightness(2);     //bright
 
-    "contrast-50"     = filter:contrast(0.5);
-    "contrast-75"     = filter:contrast(0.75);
-    "contrast-125"    = filter:contrast(1.25);
-    "contrast-150"    = filter:contrast(1.5);
+        "brightness-50"     = filter:brightness(0.5);
+        "brightness-75"     = filter:brightness(0.75);
+        "brightness-125"    = filter:brightness(1.25);
+        "brightness-150"    = filter:brightness(1.5);
 
-=>grayscale,invert,sepia
+    =>contrast
+        "contrast-0"      = filter:contrast(0);     //gray
+        "contrast-100"    = filter:contrast(1);     //normal
+        "contrast-200"    = filter:contrast(2);     //colorful bright
 
-    "grayscale-0"     = filter:grayscale(0%);    //black & white photo
-    "grayscale"       = filter:grayscale(100%);  //normal photo
+        "contrast-50"     = filter:contrast(0.5);
+        "contrast-75"     = filter:contrast(0.75);
+        "contrast-125"    = filter:contrast(1.25);
+        "contrast-150"    = filter:contrast(1.5);
 
-    "invert-0"          = filter:invert(0%);    //color invert photo
-    "invert"            = filter:invert(100%);  //normal photo
+    =>grayscale,invert,sepia
 
-    "sepia-0"          = filter:sepia(0%);    //gray photo
-    "sepia"            = filter:sepia(100%);  //normal photo
+        "grayscale-0"     = filter:grayscale(0%);    //black & white photo
+        "grayscale"       = filter:grayscale(100%);  //normal photo
 
-=>huerotate
-    "hue-rotate-0"      = filter:hue-rotate(0deg);
-    "hue-rotate-90"     = filter:hue-rotate(90deg); //green photo
-    "hue-rotate-180"    = filter:hue-rotate(180deg);//blue  photo
+        "invert-0"          = filter:invert(0%);    //color invert photo
+        "invert"            = filter:invert(100%);  //normal photo
 
-    "hue-rotate-30"
-    "hue-rotate-60"
+        "sepia-0"          = filter:sepia(0%);    //gray photo
+        "sepia"            = filter:sepia(100%);  //normal photo
 
-=>saturate
-    "saturate-0"      = filter:saturate(0);     //gray photo
-    "saturate-100"    = filter:saturate(1);     //normal
-    "saturate-200"    = filter:saturate(2);     //colorful photo
+    =>huerotate
+        "hue-rotate-0"      = filter:hue-rotate(0deg);
+        "hue-rotate-90"     = filter:hue-rotate(90deg); //green photo
+        "hue-rotate-180"    = filter:hue-rotate(180deg);//blue  photo
 
-    "saturate-50"     = filter:saturate(0.5);
-    "saturate-150"    = filter:saturate(1.5);
+        "hue-rotate-30"
+        "hue-rotate-60"
+
+    =>saturate
+        "saturate-0"      = filter:saturate(0);     //gray photo
+        "saturate-100"    = filter:saturate(1);     //normal
+        "saturate-200"    = filter:saturate(2);     //colorful photo
+
+        "saturate-50"     = filter:saturate(0.5);
+        "saturate-150"    = filter:saturate(1.5);
+
 
 =>tablelayout
     "table-auto"        = table-layout:auto;
@@ -328,87 +337,88 @@
         96
     */
     
+=>transform function
+    =>translate
+        "translate-x-0"     = transform:translateX(0);
+        "translate-y-0"     = transform:translateY(0);
+        /*
+            px
+            0 0.5 1 1.5 2 2.5 3 3.5 4=1rem(16px)
+            5 6 7 8 9 10 11 12
+            14 16
+            20 24 28 32 36 40 44 48 52 56 60 64
+            72 80 
+            96
+        */
+        
 
-=>translate
-    "translate-x-0"     = transform:translateX(0);
-    "translate-y-0"     = transform:translateY(0);
-    /*
-        px
-        0 0.5 1 1.5 2 2.5 3 3.5 4=1rem(16px)
-        5 6 7 8 9 10 11 12
-        14 16
-        20 24 28 32 36 40 44 48 52 56 60 64
-        72 80 
-        96
-    */
-    
+        "translate-x-1/2"   = transform:translateX(50%);
+        "translate-y-1/2"   = transform:translateY(50%);
 
-    "translate-x-1/2"   = transform:translateX(50%);
-    "translate-y-1/2"   = transform:translateY(50%);
+        "translate-x-full"   = transform:translateX(100%);
+        "translate-y-full"   = transform:translateY(100%);
 
-    "translate-x-full"   = transform:translateX(100%);
-    "translate-y-full"   = transform:translateY(100%);
+    =>rotate
+        "rotate-0"          = transform:rotate(0deg);
+        "rotate-45"         = transform:rotate(45deg);
+        "rotate-90"         = transform:rotate(90deg);
+        "rotate-180"        = transform:rotate(180deg);
 
-=>rotate
-    "rotate-0"          = transform:rotate(0deg);
-    "rotate-45"         = transform:rotate(45deg);
-    "rotate-90"         = transform:rotate(90deg);
-    "rotate-180"        = transform:rotate(180deg);
+        "rotate-1"
+        "rotate-2"
+        "rotate-3"
 
-    "rotate-1"
-    "rotate-2"
-    "rotate-3"
+        "rotate-6"
+        "rotate-12"
 
-    "rotate-6"
-    "rotate-12"
+    =>scale
+        "scale-0"           = transform:scale(0);
+        "scale-x-0"         = transform:scaleX(0);
+        "scale-y-0"         = transform:scaleY(0);
 
-=>scale
-    "scale-0"           = transform:scale(0);
-    "scale-x-0"         = transform:scaleX(0);
-    "scale-y-0"         = transform:scaleY(0);
+        "scale-100"           = transform:scale(1);
+        "scale-x-100"         = transform:scaleX(1);
+        "scale-y-100"         = transform:scaleY(1);
 
-    "scale-100"           = transform:scale(1);
-    "scale-x-100"         = transform:scaleX(1);
-    "scale-y-100"         = transform:scaleY(1);
+        "scale-200"           = transform:scale(2);
+        "scale-x-200"         = transform:scaleX(2);
+        "scale-y-200"         = transform:scaleY(2);
 
-    "scale-200"           = transform:scale(2);
-    "scale-x-200"         = transform:scaleX(2);
-    "scale-y-200"         = transform:scaleY(2);
+        "scale-50"           = transform:scale(0.5);
+        "scale-x-50"         = transform:scaleX(0.5);
+        "scale-y-50"         = transform:scaleY(0.5);
 
-    "scale-50"           = transform:scale(0.5);
-    "scale-x-50"         = transform:scaleX(0.5);
-    "scale-y-50"         = transform:scaleY(0.5);
+        "scale-75"           = transform:scale(0.75);
+        "scale-x-75"         = transform:scaleX(0.75);
+        "scale-y-75"         = transform:scaleY(0.75);
 
-    "scale-75"           = transform:scale(0.75);
-    "scale-x-75"         = transform:scaleX(0.75);
-    "scale-y-75"         = transform:scaleY(0.75);
+        "scale-125"           = transform:scale(1.25);
+        "scale-x-125"         = transform:scaleX(1.25);
+        "scale-y-125"         = transform:scaleY(1.25);
 
-    "scale-125"           = transform:scale(1.25);
-    "scale-x-125"         = transform:scaleX(1.25);
-    "scale-y-125"         = transform:scaleY(1.25);
+        "scale-150"           = transform:scale(1.5);
+        "scale-x-150"         = transform:scaleX(1.5);
+        "scale-y-150"         = transform:scaleY(1.5);
 
-    "scale-150"           = transform:scale(1.5);
-    "scale-x-150"         = transform:scaleX(1.5);
-    "scale-y-150"         = transform:scaleY(1.5);
+    => skew
+        skew-x-0                = transform:skewX(0deg);
+        skew-y-0                = transform:skewY(0deg);
 
-=> skew
-    skew-x-0                = transform:skewX(0deg);
-    skew-y-0                = transform:skewY(0deg);
+        skew-x-1                = transform:skewX(1deg);
+        skew-y-1                = transform:skewY(0deg);
 
-    skew-x-1                = transform:skewX(1deg);
-    skew-y-1                = transform:skewY(0deg);
+        skew-x-2                = transform:skewX(2deg);
+        skew-y-2                = transform:skewY(2deg);
 
-    skew-x-2                = transform:skewX(2deg);
-    skew-y-2                = transform:skewY(2deg);
+        skew-x-3                = transform:skewX(3deg);
+        skew-y-3                = transform:skewY(3deg);
 
-    skew-x-3                = transform:skewX(3deg);
-    skew-y-3                = transform:skewY(3deg);
+        skew-x-6                = transform:skewX(6deg);
+        skew-y-6                = transform:skewY(6deg);
 
-    skew-x-6                = transform:skewX(6deg);
-    skew-y-6                = transform:skewY(6deg);
+        skew-x-12               = transform:skewX(12deg);
+        skew-y-12               = transform:skewY(12deg);
 
-    skew-x-12               = transform:skewX(12deg);
-    skew-y-12               = transform:skewY(12deg);
 
 =>transition
 
@@ -434,7 +444,6 @@
    *"delay-500"      = transition-delay:500ms;
     "delay-700"      = transition-delay:700ms;
    *"delay-1000"     = transition-delay:1000ms;
-
 
 =>resizeanduserselect
     "resize-none"       = resize:none;
@@ -466,107 +475,158 @@
     "text-inherit"
     "text-current"
 
-    "bg-color-value"
-    "bg-transparnt"
-    "bg-inherit"
+    =>textdecorationcolor
+        "decoration-color-value"
+        "decoration-transparent"
+        "decoration-inherit"
+        "decoration-current"
 
-=>boxshadowcolor
-    "shadow-color-value"
+    =>boxshadowcolor
+        "shadow-color-value"
 
-=>textdecorationcolor
-    "decoration-color-value"
-    "decoration-transparent"
-    "decoration-inherit"
-    "decoration-current"
+    =>bordercolor
+        "border-color-value"
+=>background
+    =>backgroundcolor
+        "bg-color-value"
+        "bg-transparnt"
+        "bg-inherit"
+    
+    =>backgroundimage
+        - direction
+            "bg-gradient-to-l"
+            "bg-gradient-to-r"
+            "bg-gradient-to-t"
+            "bg-gradient-to-b"
+
+            "bg-gradient-to-tl"
+            "bg-gradient-to-bl"
+            "bg-gradient-to-tr"
+            "bg-gradient-to-br"
+
+        - gradientcolors
+            "from-color-value"
+            "to-color-value"
+            "via-color-value"
+
+            "from-white"
+            "from-black"
+            "from-transparent"
+
+            "to-white"
+            "to-black"
+            "to-transparent"
+
+            "via-white"
+            "via-black"
+            "via-transparent"
+
+
+            "hover:from-color-value"                            //'from-color-value' will mix from-color and transparent
+            "hover:from-color-value hover:to-color-value"
+            "hover:from-color-value hover:via-color-value hover:to-color-value"
+
+    =>backgroupdrepeat
+        "bg-repeat"
+        "bg-repeat-x"
+        "bg-repeat-y"
+        "bg-no-repeat"
+
+        "bg-repeat-round"
+        "bg-repeat-space"
 
 =>float
-"float-left"            = float:left;
-"float-right"           = float:right;
-"float-none"            = float:none;
+    "float-left"            = float:left;
+    "float-right"           = float:right;
+    "float-none"            = float:none;
 
-"clear-left"            = clear:left;
-"clear-right"           = clear:right;
-"clear-both"            = clear:both;
+    "clear-left"            = clear:left;
+    "clear-right"           = clear:right;
+    "clear-both"            = clear:both;
 
 =>position
-"static"                = position:static;
-"absolute"              = position:absolute;
-"relative"              = position:relative;
-"fixed"                 = position:fixed;   //float to the body   
-"sticky"                = position:sticky;
+    "static"                = position:static;
+    "absolute"              = position:absolute;
+    "relative"              = position:relative;
+    "fixed"                 = position:fixed;   //float to the body   
+    "sticky"                = position:sticky;
 
-"left-0"                    = left:0;
-"top-0"                     = top:0;
-"right-0"                   = right:0;
-"bottom-0"                  = bottom:0;
-    /*
-        px
-        0.5 1 1.5 2 2.5 3 3.5 4=1rem(16px)
-        5 6 7 8 9 10 11 12
-        14 16
-        20 24 28 32 36 40 44 48 52 56 60 64
-        72 80 
-        96
-    */
+    - to use with "absolute" and "relative"
 
-"inset-0"                   = left:0;top:0;bottom:0;right:0;
-"inset-x"                   = left:0;right:0;
-"inset-y"                   = top:0;bottom:0;
-    /*
-        px
-        0.5 1 1.5 2 2.5 3 3.5 4=1rem(16px)
-        5 6 7 8 9 10 11 12
-        14 16
-        20 24 28 32 36 40 44 48 52 56 60 64
-        72 80 
-        96
-    */
+    "left-0"                    = left:0;
+    "top-0"                     = top:0;
+    "right-0"                   = right:0;
+    "bottom-0"                  = bottom:0;
+        /*
+            px
+            0.5 1 1.5 2 2.5 3 3.5 4=1rem(16px)
+            5 6 7 8 9 10 11 12
+            14 16
+            20 24 28 32 36 40 44 48 52 56 60 64
+            72 80 
+            96
+        */
+
+    "inset-0"                   = left:0;top:0;bottom:0;right:0;
+    "inset-x"                   = left:0;right:0;
+    "inset-y"                   = top:0;bottom:0;
+        /*
+            px
+            0.5 1 1.5 2 2.5 3 3.5 4=1rem(16px)
+            5 6 7 8 9 10 11 12
+            14 16
+            20 24 28 32 36 40 44 48 52 56 60 64
+            72 80 
+            96
+        */
 
 
-"z-0"                   = z-index:0;    //default
-"z-10"                  = z-index:10;
-"z-20"
-"z-30"
-"z-40"
-"z-50"
-"z-auto"
+    "z-0"                   = z-index:0;    //default
+    "z-10"                  = z-index:10;
+    "z-20"
+    "z-30"
+    "z-40"
+    "z-50"
+    "z-auto"
 
 =>visibility
-"visible"       = visibility:visible;
-"invisible"     = visibility:hidden;
+    "visible"       = visibility:visible;
+    "invisible"     = visibility:hidden;
 
 =>display
 
-'inline'                = display:inline;
-'block'                 = display:block;
-'hidden'                = display:none;
-'flex'                  = display:flex;
-'grid'                  = display:grid;
-'inline-block'          = display:inline-block;  // make element side by side and can play margin
+    'inline'                = display:inline;
+    'block'                 = display:block;
+    'hidden'                = display:none;
+    'flex'                  = display:flex;
+    'grid'                  = display:grid;
+    'inline-block'          = display:inline-block;  // make element side by side and can play margin
 
--to use with 'flex'
-justify-center          = justify-content:center;   //horizontal center
-justify-start           = justify-content:start;
-justify-end             = justify-content:end;
-justify-between         = justify-content:space-between;
-justify-around          = justify-content:space-around;
-justify-evenly          = justify-content:space-evenly;
+=>centerelement
+    =>justify-content and align-item
+        -to use with 'flex'
+            'justify-center'            = justify-content:center;   //horizontal center
+            'justify-start '            = justify-content:start;
+            'justify-end'               = justify-content:end;
+            'justify-between'           = justify-content:space-between;
+            'justify-around'            = justify-content:space-around;
+            'justify-evenly'            = justify-content:space-evenly;
 
 
-items-center            = align-items:center;
-items-start             = align-items:start;
-items-end               = align-items:end;
+            items-center                = align-items:center;
+            items-start                 = align-items:start;
+            items-end                   = align-items:end;
 
-=>placeitems
-    -to use with "grid"
-    place-items-center      = place-items:center;
-    place-items-start       = place-items:start;
-    place-items-end         = place-items:end;
-    place-items-stretch     = place-items:stretch;  //stretch width & height if width & height are not given
-    place-items-baseline    = place-items:baseline;
+    =>placeitems
+        -to use with "grid"
+            place-items-center      = place-items:center;
+            place-items-start       = place-items:start;
+            place-items-end         = place-items:end;
+            place-items-stretch     = place-items:stretch;  //stretch width & height if width & height are not given
+            place-items-baseline    = place-items:baseline;
 
 =>order
-    *order work with "flex"
+    *work only with "flex" and "grid"
 
     'order-1'                 = order:1;
     'order-2'                = order:2;
@@ -586,7 +646,7 @@ items-end               = align-items:end;
 
     'order-none'                = order:0;
 
-=>widthandheight
+=>width and height
     "w-0"
     /*
         px
@@ -620,7 +680,7 @@ items-end               = align-items:end;
     "h-screen"      = height:100vh;
     *h-1/2 h-full can only give if parent height exist
 
-=>marginandpadding
+=>margin and padding
     'm-0'           = margin:0;
     'mx-0'          = margin-left:0;margin-right:0;
     'my-0'          = margin-top:0;margin-bottom:0;
@@ -663,7 +723,7 @@ items-end               = align-items:end;
         96
     */
 
-=>containerandboxsizing
+=>container and boxsizing
     "container"
 
     other size  = width:100%;
@@ -679,6 +739,7 @@ items-end               = align-items:end;
 
 =>spacebetween
     -Utilities for controlling the space between child elements.
+    -set at parent element
 
 
     "space-x-0"     = margin-left:0;
@@ -708,7 +769,8 @@ items-end               = align-items:end;
 
 =>gridtemplatecolumns
     - divide element into columns
-    - work only with 'grid'
+    * work only with 'grid'
+    * set at parent element
 
     "grid-cols-1"
     "grid-cols-2"
@@ -725,7 +787,7 @@ items-end               = align-items:end;
     "grid-cols-none"
 
 =>gap
-    -Utilities for controlling gutters between grid and flexbox items.
+    -Utilities for controlling gutters between 'grid' and 'flex' items.
     -set at parent element
 
     "gap-0" 
@@ -742,14 +804,9 @@ items-end               = align-items:end;
         96
     */
 
-=>aspectratio
-    - adjust the element width and height
-
-    "aspect-auto"       = aspect-ratio:auto;
-    "aspect-square"     = aspect-ratio:1/1;
-    "aspect-video"      = aspect-ratio:16/9;        // Standard video ratio
-
 =>columns
+    -set at parent element
+
     "columns-1"         = columns:1;
     "columns-2"         = columns:2;
     "columns-3"         = columns:3;
@@ -777,6 +834,23 @@ items-end               = align-items:end;
     "columns-4xl"      
     "columns-5xl"  
     "columns-6xl"    
-    "columns-7xl"      
+    "columns-7xl"  
+
+=>breakafter and breakbefore
+    - use to set a column break
+    * to use with "columns"
+    * should break columns not exceed "columns" value
+
+    'break-after-column'        = break-before:column;
+    'break-before-column'       = break-after:column;
+
+=>aspectratio
+    - adjust the element width and height
+
+    "aspect-auto"       = aspect-ratio:auto;
+    "aspect-square"     = aspect-ratio:1/1;
+    "aspect-video"      = aspect-ratio:16/9;        // Standard video ratio
+
+    
 
 
