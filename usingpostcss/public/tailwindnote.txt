@@ -526,14 +526,45 @@
             "hover:from-color-value hover:to-color-value"
             "hover:from-color-value hover:via-color-value hover:to-color-value"
 
-    =>backgroupdrepeat
-        "bg-repeat"
-        "bg-repeat-x"
-        "bg-repeat-y"
-        "bg-no-repeat"
+    =>backgroundrepeat
+        "bg-repeat"             = background-repeat:repeat; // default
+        "bg-repeat-x"           = background-repeat:repeat-x; 
+        "bg-repeat-y"           = background-repeat:repeat-y;
+        "bg-no-repeat"          = background-repeat:no-repeat; 
 
-        "bg-repeat-round"
-        "bg-repeat-space"
+        "bg-repeat-round"       = background-repeat:round; // image is stretched or squished to fill the space and fit to container. 
+        "bg-repeat-space"       = background-repeat:space; // image is repeated with space between them.
+    
+    =>backgroundposition
+        "bg-top"                = background-position:top;
+        "bg-right"              = background-position:right;
+        "bg-bottom"             = background-position:bottom;
+        "bg-left"               = background-position:left;
+
+        "bg-center"              = background-position:center;
+
+        "bg-left-top"               = background-position:left top;
+        "bg-left-bottom"            = background-position:left bottom;
+        "bg-right-top"              = background-position:right top;
+        "bg-right-bottom"           = background-position:right top;
+
+    =>backgroundclip
+        "bg-clip-border"            = background-clip:border; // background fill til the outer line of border
+        "bg-clip-padding"           = background-clip:padding; // background fill til the inner line of border
+        "bg-clip-content"           = background-clip:content; // background fill only content no padding
+        "bg-clip-text"              = background-clip:text; // background fill only back side of text
+    
+    =>textgradient
+        <div class="text-5xl font-extrabold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">
+            <p>Save Myanmar</p>
+            <span>Fight To Japu</span><span>Attack to Japu</span>
+        </div>
+        * Text gradient color is not noticeable because of color mix on long block div.
+
+        <div class="text-5xl font-extrabold">
+            <span class="bg-gradient-to-r from-pink-500 via-black to-violet-500 bg-clip-text text-transparent">Hello Thailand</span>
+        </div>
+        *Text gradient color will be seen mixture of gradient colors clearly.
 
 =>float
     "float-left"            = float:left;
