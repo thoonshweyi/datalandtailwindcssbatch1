@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar</title>
+        <!-- tailwind -->
+        <link href="./tailwind.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="bg-stone-900">
+        <!-- <h1>This is tailwind css</h1> -->
+        <nav class="bg-white md:flex md:justify-between items-center p-5">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl">
+                    <img src="./img/Logo-PNG-Download-Image.png" class="w-12 inline" alt="icon">
+                    <span>Nero Smart</span>
+                </a>
+
+                <a id="navtoggle" href="javascript:void(0);" class="block md:hidden" onclick="togglenav(this)">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black my-1"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </a>
+            </div>
+            
+            <ul id="navbar-nav" class="md:flex md:justify-center md:items-center h-0 overflow-hidden transition-all duration-500 md:h-auto">
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="text-lg transition-all duration-500 hover:text-violet-900">Home</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="text-lg transition-all duration-500 hover:text-violet-900">News</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="text-lg transition-all duration-500 hover:text-violet-900">Page</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="text-lg transition-all duration-500 hover:text-violet-900">About</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="text-lg transition-all duration-500 hover:text-violet-900">Contact</a></li>
+                <li class="mx-5 my-6 md:my-0"><a href="javascript:void(0);" class="bg-violet-600 text-white px-6 py-2 transition-all duration-500 hover:bg-indigo-500">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <script type="text/javascript">
+            const getnavbarnav = document.getElementById("navbar-nav");
+            function togglenav(ele){
+                if(ele.classList.contains("show")){
+                    ele.classList.remove("show");
+                    getnavbarnav.classList.add("h-0");
+
+                }else{
+                    ele.classList.add("show");
+                    getnavbarnav.classList.remove("h-0");
+                }
+                // console.log(ele);
+
+            }
+        </script>
+    </body>
+</html>
