@@ -1,0 +1,122 @@
+https://tailwindcss.com
+
+Integrate Methods
+1.Using CDN Link (Content Deliver Network);
+2.Using Tailwind CLI (Command Line Interface)
+3.Using PostCSS
+
+
+Terminal = VS code
+Nodejs
+
+CDN
+
+.text-primary{
+	color: blue;
+}
+
+.text-danger{
+	color: red;
+}
+
+
+com
+
+.text-success{
+	color: green;
+}
+
+
+project
+<p class="text-success">Hey bar mha ma hote boo</p>
+
+1.CDN
+<script src="https://cdn.tailwindcss.com"></script>
+
+---------------------------------------
+
+2.Using Tailwind CLI
+
+=open folder"usingcli"
+=open folder"terminal" (npm = Node Package Manager)
+npm install -D tailwindcss
+=>Create Tailwind config file (npx = Node Package Execute)
+npx tailwindcss init
+
+=>PostCss.config.js
+=go to tailwind.config.js
+=and write down in content:["./public/**/*.{html,js,css}"]
+
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+=>Create Tailwind main files
+=crate new folder and namilng "tailwind"
+=create new file an naming "main.css " in "tailwind" folder
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=>build process
+wtite down "npm init -y" in terminal (So it will creat pakage.json) > "scripte" {
+	 "test": "echo \"Error: no test specified\" && exit 1",
+	 "watch" : "tailwind -i ./tailwind/main.css -o ./public/tailwind.css"
+}
+
+-i = install
+-o = open
+-w = watch
+
+
+
+---------------------------------------
+3.Using PostCSS
+
+=open folder"usingpostcss"
+=open folder"terminal"
+npm install -D tailwindcss postcss autoprefixer
+=>Create Tailwind config file
+npx tailwindcss init
+
+=>PostCss.config.js
+=go to tailwind.config.js
+=and write down in content:["./public/**/*.HTML"]
+
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+=>Create Tailwind main files
+=crate new folder and namilng "tailwind"
+=create new file an naming "main.css " in "tailwind" folder
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=>build process
+wtite down "npm init -y" in terminal (So it will creat pakage.json) > "scripte" {
+	 "test": "echo \"Error: no test specified\" && exit 1",
+	 "build" : "tailwind -i ./tailwind/main.css -o ./public/tailwind.css"
+}
+
+-i = install
+-o = open
+-w = watch
+
+go to terminal and enter "npm run build"
+
+=>Watch
+go to package.json , write down
+
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tailwind -i ./tailwind/main.css -o ./public/tailwind.css",
+    "watch" : "tailwind -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+    
+  },
+
+
+
+21 oct (tw) 

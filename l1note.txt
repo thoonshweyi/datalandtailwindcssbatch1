@@ -53,3 +53,39 @@ go to package.json , write down
     "build" : "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css",
     "watch" : "tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css -w"
   },
+
+  2. Using Tailwind CLI ( Command-Line Interfac)
+=open folder "usingcli"
+=open terminal
+npm install -D tailwindcss // (npm = Node Package Manager)
+=>Create tailwind.config file
+npx tailwindcss init      // (npx = Node Package Execute)
+
+=>Configure your template paths
+=go to tailwind.congig.js
+=and write down in content: ["./public/**/*.html"]
+
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+=>Create Tailwind main file
+=create new folder and naming "tailwind"
+=create new file and maing "main.css" in "tailwind" folder
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+=>Build Process
+="npm init -y" in terminal (so it will create package.json)
+=write down in packae.json > "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch" : "npx tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch"
+  }
+  -i install
+  -o = open
+
+
+Mehod 2
+
+  npx tailwindcss -i ./tailwind/main.css -o ./public/tailwind.css --watch

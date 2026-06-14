@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+        <title>Blog Sample</title>
+        <!-- tailwind css is framework and sometime use customize padding margin color -->
+        <link href="./tailwind.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+     <body class="bg-stone-100">
+          <div class="flex flex-col">
+               <!-- start header -->
+               <div class="bg-slate-500 py-5 text-center md:text-start">
+                    <div class="container px-4 mx-auto">
+                         <h1 class="text-white text-3xl font-bold">Tailwind Web Design</h1>
+                         <span class="text-gray-100 italic underline">Welcome to our site</span>
+                    </div>
+               </div>
+               <!-- end header -->
+          
+          
+               <!-- start body -->
+               <div class="bg-white py-8">
+                    <div class="container mx-auto flex flex-col md:flex-row">
+                         <div class="w-full md:w-1/4 px-4">
+                              <div class="bg-slate-500 p-4">
+                                   <h2 class="text-xl font-bold text-white mb-4">Latest News</h2>
+                                   <ul class="list-none">
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">What is Lorem Ipsum?</a></li>
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">Why do we use it?</a></li>
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">Where does it come from?</a></li>
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">Where can I get some?</a></li>
+                                   </ul>
+                              </div>
+                              <div class="bg-slate-500 p-4 my-4">
+                                   <h2 class="text-xl font-bold text-white mb-4">More Explorer</h2>
+                                   <ul class="list-none">
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">What is Lorem Ipsum?</a></li>
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">Why do we use it?</a></li>
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">Where does it come from?</a></li>
+                                        <li class="mb-2"><a href="javascript:void(0);" class="text-white hover:text-sky-300">Where can I get some?</a></li>
+                                   </ul>
+                              </div>
+                              <div class="bg-slate-500 p-4 my-4">
+                                   <h2 class="text-xl font-bold text-white mb-4">Get more updates....</h2>
+                                   <p class="text-white text-sm mb-5">Sign up for our newsletter and you'll be among the first to find out about new features.</p>
+                                   <form action="" method="">
+                                        <div class="w-full flex items-center">
+                                             <div class="w-full relative mr-3">
+                                                  <div class="absolute top-3 left-0 pl-3">
+                                                       <i class="fas fa-envelope text-gray-500"></i>
+                                                  </div>
+                                                  <input type="email" name="scubcribe" id="subscribe" class="w-full bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg pl-10 p-3" placeholder="Email Address...."/>
+                                             </div>
+
+                                             <a href="#" class="bg-blue-700 text-sm text-center rounded-lg px-5 py-3">Subscribe</a>
+                                        </div>
+                                   </form>
+                              </div>
+                    
+                    
+                         </div>
+                         <div class="w-full md:w-3/4 px-4">
+                              <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" class="w-full mb-8" alt="">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                              <div class="grid grid-cols-1 gap-4 sm:grid-cols-4 my-5">
+                                   <div class="bg-white border rounded-md flex items-center shadow">
+                                        <div class="bg-green-600 p-4">
+                                             <i class="fas fa-users fa-2x text-white"></i>
+                                        </div>
+
+                                        <div class="text-gray-700 px-4">
+                                             <h1 class="text-sm tracking-wider">Total Member</h1>
+                                             <p class="text-3xl">15,000</p>
+                                        </div>
+                                   </div>
+                                   <div class="bg-white border rounded-md flex items-center shadow">
+                                        <div class="bg-violet-600 p-4">
+                                             <i class="fas fa-file fa-2x text-white"></i>
+                                        </div>
+
+                                        <div class="text-gray-700 px-4">
+                                             <h1 class="text-sm tracking-wider">Total Post</h1>
+                                             <p class="text-3xl">65,000</p>
+                                        </div>
+                                   </div>
+                                   <div class="bg-white border rounded-md flex items-center shadow">
+                                        <div class="bg-indigo-600 p-4">
+                                             <i class="fas fa-comment fa-2x text-white"></i>
+                                        </div>
+
+                                        <div class="text-gray-700 px-4">
+                                             <h1 class="text-sm tracking-wider">Total Comment</h1>
+                                             <p class="text-3xl">685,000</p>
+                                        </div>
+                                   </div>
+                                   <div class="bg-white border rounded-md flex items-center shadow">
+                                        <div class="bg-rose-600 p-4">
+                                             <i class="fas fa-share fa-2x text-white"></i>
+                                        </div>
+
+                                        <div class="text-gray-700 px-4">
+                                             <h1 class="text-sm tracking-wider">Total Share</h1>
+                                             <p class="text-3xl">49.52</p>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="flex flex-col mb-10">
+                                   <h1 class="font-bold text-2xl">Tailwind News One</h1>
+                                   <p class="indent-10 text-justify my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                   <button type="button" class="bg-blue-600 text-white rounded p-2 hover:bg-blue-800 self-end">Read More..</button>
+                              </div>
+                              <div class="mb-10">
+                                   <h1 class="font-bold text-2xl">Tailwind News Two</h1>
+                                   <p class="indent-10 text-justify my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                   <button type="button" class="bg-blue-600 text-white rounded p-2 hover:bg-blue-800 self-end">Read More..</button>
+                              </div>
+                              <div class="flex flex-col mb-10">
+                                   <h1 class="font-bold text-2xl">Tailwind News Three</h1>
+                                   <p class="indent-10 text-justify my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                   <button type="button" class="bg-blue-600 text-white rounded p-2 hover:bg-blue-800 self-end">Read More..</button>
+                              </div>
+                              <div class="mb-10">
+                                   <h1 class="font-bold text-2xl">Tailwind News Four</h1>
+                                   <p class="indent-10 text-justify my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                   <button type="button" class="bg-blue-600 text-white rounded p-2 hover:bg-blue-800">Read More..</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- end body -->
+          
+               
+               <!-- start footer -->
+               <div class="bg-slate-500">
+                    <div class="max-w-screen-xl mx-auto text-white flex justify-between">
+                         <div class="text-sm p-5">
+                              <h3 class="text-indigo-300 font-medium uppercase">Home</h3>
+                              <div class="">
+                                   <a href="javascript:void(0);" class="block mb-3">Services</a>
+                                   <a href="javascript:void(0);" class="block mb-3">Products</a>
+                                   <a href="javascript:void(0);" class="block mb-3">Pricing</a>
+                                   <a href="javascript:void(0);" class="block mb-3">About Us</a>
+                              </div>
+                         </div>
+                         <div class="text-sm p-5">
+                              <h3 class="text-indigo-300 font-medium uppercase">Resources</h3>
+                              <div class="">
+                                   <a href="javascript:void(0);" class="block mb-3">Documentation</a>
+                                   <a href="javascript:void(0);" class="block mb-3">Tutorials</a>
+                                   <a href="javascript:void(0);" class="block mb-3">Linkedin</a>
+                              </div>
+                         </div>
+                         <div class="text-sm p-5">
+                              <h3 class="text-indigo-300 font-medium uppercase">Support</h3>
+                              <div class="">
+                                   <a href="javascript:void(0);" class="block mb-3">Call Us</a>
+                                   <a href="javascript:void(0);" class="block mb-3">Privacy Policy</a>
+                                   <a href="javascript:void(0);" class="block mb-3">Team</a>
+                              </div>
+                         </div>
+                         <div class="text-sm p-5">
+                              <h3 class="text-indigo-300 font-medium uppercase">Contact Us</h3>
+                              <div class="">
+                                   <a href="javascript:void(0);" class="block mb-3">No.19, Btw 102-106, Mandalay</a>
+                                   <a href="javascript:void(0);" class="block mb-3">info@webdesign.com</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- end footer -->
+          </div>
+          
+     </body>
+</html>   
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Photo Studio</title>
+          <link href="./assets/img/fav/favicon.png" rel="icon" type="image/png"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link href="./tailwind.css" rel="stylesheet" />
+          <link rel="stylesheet" href="">
+     </head>
+     <body>
+         
+
+          <!-- Start Header Section -->
+          <header>
+               <nav class="container mx-auto p-6">
+                    <div class="flex justify-between my-6">
+                         <!-- logo -->
+                         <div class="flex items-center">
+                              <img src="./assets/img/fav/favicon.png" id="logo" class="w-16 mr-5" alt="favicon" /> <h2 class="">DLT Photo Studio</h2>
+                         </div>
+                         <!-- menu -->
+                         <div class="uppercase space-x-10 hidden items-center md:flex">
+                              <a href="javascript:void(0);" class="tracking-widest hover:text-primary">Locations</a>
+                              <a href="javascript:void(0);" class="tracking-widest hover:text-primary">Equipment</a>
+                              <a href="javascript:void(0);" class="tracking-widest hover:text-primary">Blog</a>
+                              <a href="javascript:void(0);" class="tracking-widest hover:text-primary">FAQ</a>
+                              <a href="javascript:void(0);" class="tracking-widest hover:text-primary">Signup</a>
+                              <a href="javascript:void(0);" class="login-btn">Login</a>
+                         </div>
+
+                         <!-- burger -->
+                         <button id="menu-btn" class="block md:hidden">
+                              <span class="line1"></span>
+                              <span class="line2"></span>
+                              <span class="line3"></span>
+                         </button>
+                    </div>
+
+                    <!-- dropdown -->
+                    <!-- hidden -->
+                    <div id class="w-full h-full uppercase tracking-widest divide-y fixed inset-0 z-50 hidden"> 
+                         <div class="w-full py-3 text-center"><a href="javascript:void(0);" class="hover:text-warning">Locations</a></div>
+                         <div class="w-full py-3 text-center"><a href="javascript:void(0);" class="hover:text-warning">Equipment</a></div>
+                         <div class="w-full py-3 text-center"><a href="javascript:void(0);" class="hover:text-warning">Blog</a></div>
+                         <div class="w-full py-3 text-center"><a href="javascript:void(0);" class="hover:text-warning">FAQ</a></div>
+                         <div class="w-full py-3 text-center"><a href="javascript:void(0);" class="hover:text-warning">Signup</a></div>
+                         <div class="w-full py-3 text-center"><a href="javascript:void(0);" class="hover:text-warning">Login</a></div>
+
+                    </div>
+               </nav>
+          </header>
+          <!-- End Header Section -->
+     
+          <!-- Start Banner Section -->
+          <section id="banner">
+               <div class="container flex flex-col-reverse md:flex-row mx-auto p-6">
+
+                    <!-- paragraph -->
+                    <div class="space-y-10 md:w-1/2 md:mt-16">
+                         <h1 class="font-semibild text-center md:text-left lg:text-3xl">That's Your The Best Studio</h1>
+                         <p class="max-w-md text-secondary text-base text-center md:text-left lg:text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    
+                         <div class="flex justify-center items-center space-x-4 md:justify-start">
+                              <a href="javascript:void(0);" class="bg-indigo-500 text-white text-sm font-semibold rounded shadow-md border-2 border-primary md:text-base hover:bg-white hover:text-primary p-4">Quotation</a>
+                              <a href="javascript:void(0);" class="bg-gray-300 text-black text-sm font-semibold rounded shadow-md border-2 border-primary md:text-base hover:bg-white hover:text-primary p-4">Find Out</a>
+                         </div>
+                    </div>
+
+                    <!-- camera -->
+                    <div class="md:w-1/2 mx:auto mb-5 md:mx-0 md:mb-0">
+                         <img src="./assets/img/etc/camera.png" class="w-[550px]" alt="camera">
+                    </div>
+
+               </div>
+          </section>
+          <!-- End Banner Section -->
+
+          <!-- Start Adv Section -->
+          <section class="py-[20px] md:py-[30px]">
+               <div class="container mx-auto">
+                    <div class="bg-primary px-8 py-8 md:p-[60px]">
+                         <div class="flex flex-wrap items-center space-y-5">
+                              <!-- caption -->
+                              <div class="w-full md:w-1/2">
+                                   <span class="text-base font-medium text-white">Find Your next Dream Picture</span>
+                                   <h2 class="text-3xl font-bold text-white">Get started with our studio</h2>
+                              </div>
+
+                              <!-- button -->
+                              <div class="w-full md:w-1/2">
+                                   <div class="flex flex-wrap md:justify-end">
+                                        <a href="javascript:void(0);" class="bg-white text-primary text-base font-medium rounded-md hover:bg-warning px-7 py-3 mr-4">Show Me</a>
+                                        <a href="javascript:void(0);" class="bg-warning text-white text-base font-medium rounded-md hover:bg-danger px-7 py-3">Signup</a>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- End Adv Section -->
+
+          <!-- Start FAQ Section -->
+          <section class="p-5">
+               <div class="container mx-auto">
+                    <div class="w-full">
+                         <div>
+                              <div class="text-gray-500 cursor-pointer flex justify-between items-center group py-3">
+                                   <h2 class="group-hover:text-red-500">Photography & Flim Studio ? </h2>
+                                   <i class="fas fa-chevron-down"></i>
+                              </div>
+                              <div>
+                                   <p class="text-gray-400 text-justify py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- End FAQ Section -->
+
+          <!-- Start Adv Section -->
+          <section class="py-5">
+               <div class="container mx-auto">
+                    <div class="md:w-1/2 text-center flex items-center md:text-left px-8 md:px-12">
+                         <h2 class="text-gray-800 font-semibild">Build Your New <span class="text-indigo-700">Idea Picture</span> </h2>                         
+                    </div>
+
+                    <div class="md:w-1/2 hidden md:block" style="">
+                         <div class="h-full object-cover" style="background-image: url(https://www.wbcsd.org/var/site/storage/images/overview/news-insights/wbcsd-insights/accelerating-business-along-the-road-to-a-nature-positive-future/225091-1-eng-GB/Accelerating-business-along-the-road-to-a-nature-positive-future_i1140.jpg);">
+                              <div class="h-full bg-black opacity-25"></div>
+                         </div>
+                    
+                    </div>
+               </div>
+          </section>
+          <!-- End Adv Section -->
+
+          <!-- Start Service Section -->
+          <section>
+               <div class="container px-6 py-4 mx-auto">
+                    <div class="grid gap-6 mb-8 mb:grid-cols-4">
+                         <div class="bg-white border-2 border-gray-200 rounded-lg shadow-sm flex items-center">
+                              <div class="bg-primary text-white rounded-full p-3 mr-4">
+                                   <i class="fas fa-truck"></i>
+                              </div>
+                              <div>
+                                   <p class="text-gray-900 text-sm font-mediummb-3">Transportation</p>
+                                   <p class="text-gray-900 text-sm font-mediummb-3">Servide For Wedding</p>
+
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- End Service Section -->
+
+          <script src="./assets/js/app.js" type="text/javascript"></script>
+     </body>
+</html>
